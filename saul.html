@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAUL GOODMAN</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<style>
+
+   *{
+margin:0;
+padding:0;
+}
+    .navbar{
+    
+        background-color:rgb(58, 56, 56);
+        border-radius: 36px;
+    
+    }
+    .navbar li{
+        float:left;
+    list-style: none;
+    margin: 13px 10px;
+    text-align: right;
+    font-size: x-large;
+   
+    
+     }
+    .navbar ul{
+        overflow:auto;
+
+    }
+    .navbar li a {
+    padding: 10px 10px;
+    font-size: 10px 10px;
+    text-decoration:none;
+    color:rgba(240, 205, 8, 0.863);
+    
+ }
+ .navbar ul li a:hover{
+    color:white;
+ }
+
+ .background{
+    height:100vh;
+    background-image: url(image/saulbg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+        
+ }
+ p{
+    font-size: xx-large;
+    font-family: 'Bonheur Royale', cursive;
+    color:white;
+    text-decoration: none;
+    text-align:center;
+
+    
+    
+ }
+ .container{
+    height:100%;
+    width:100%;
+    background-image: url(image/saulright.jpg);
+    background-position: center;
+    background-size:cover;
+    position: absolute;
+ }
+ .form-box{
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background: #fff;
+    padding: 5px;
+    overflow: hidden;
+ }
+ .button-box{
+    width:220px;
+    margin:35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+ }
+
+ .toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background:transparent;
+    border:0;
+    outline: none;
+    position: relative;
+    
+ }
+#btn{
+    top:0;
+    left:0;
+    position:absolute;
+    width: 110px;
+    height:100%;
+    background: linear-gradient(to right,#434343,gold);
+    border-radius: 30px;
+    transition:.5s;
+
+ }
+ .input-group{
+    top:180px;
+    position:absolute;
+    width:280px;
+    transition: .5s;
+ }
+ .input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left:0;
+    border-top:0;
+    border-right:0;
+    border-bottom:1px solid #999;
+    outline: none;
+    background:transparent;
+ }
+ .submit-btn{
+    width:85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: black;
+    margin : auto;
+    background: linear-gradient(to right,#434343,gold );
+    border:0;
+    outline:none;
+    border-radius:30px;
+ }
+ .check-box{
+    margin:30px 10px 30px 0;
+
+
+ }
+ 
+ #login{
+    left:50px;
+ }
+ #register{
+    left:450px;
+ }
+ h1{
+   font-family: 'Amatic SC', cursive;
+   color:white;
+   text-align: center;
+   font-size: 70px;
+  
+ }
+
+
+
+ .saul{
+   height:180px;
+   float:right;
+ }
+ img{
+   border-radius: 35px;
+ }
+ .third{
+   height:100%;
+   width:100%;
+   background-position: center;
+    background-size:cover;
+    position: absolute;
+   
+   text-align: center;
+ }
+
+</style>
+<body>
+    <div class="background">
+    <header>
+        <nav class="navbar">
+            <ul>
+                <p class="navigation">
+                <li><a href="#">HOME</a></li>
+                 <li><a href="testimonials.html">TESTIMONIALS</a></li>
+                 <li><a href="calendar.html">CALENDAR</a></li>
+               <li><a href="#">OFFICE-WEBCAM</a></li>
+                <li><a href="tv.html">AS SEEN FROM TV</a></li>
+               </p>
+            </ul>
+        </nav>
+       </header>
+       
+      
+       
+       
+   
+       <h1 data-text="BETTER CALL SAUL!!!">BETTER CALL SAUL</h1> >
+       <br>
+       <br>
+       <br>
+    
+     
+        
+      </div>
+
+      <div class="container"> 
+         <img src="https://www.redwolf.in/image/catalog/artwork-Images/mens/better-call-saul-logo-artwork%20india.png" width="250">
+         <p>Hi, I’m Saul Goodman. Did you know that you have rights? The Constitution says you do. And so do I. I believe that until proven guilty, every man, woman, and child in this country is innocent. And that’s why I fight for you, Albuquerque!</p>
+        <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+        <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+        <button type="button" class="toggle-btn" onclick="register()">Register</button>
+        </div>
+
+        <form id ="login"  class="input-group">
+            
+        <input type="text" class="input-field" placeholder="UeserId" required>
+        <input type="text" class="input-field" placeholder="Password" required>
+        <input type="checkbox" class="check-box"><span>Remember Password</span>
+        <button type="submit" class="submit-btn">Log In</button>
+    </form>
+
+    
+    <form id="register" class="input-group">
+            
+        <input type="text" class="input-field" placeholder="UeserId" required>
+        <input type="email" class="input-field" placeholder="Email Id" required>
+        
+        <input type="checkbox" class="check-box"><span>I agree terms and cinditions</span>
+        <button type="submit" class="submit-btn">Log In</button>
+    </form>
+
+        
+
+         </div>
+         </div>
+        </div>
+
+    </div>
+   
+    
+   <script>
+    var x = document.getElementById("login");
+    
+    var y = document.getElementById("register");
+    
+    var z = document.getElementById("btn");
+    function register(){
+        x.style.left = "-400px";
+        y.style.left ="50px";
+        z.style.left = "110px";
+    }
+    function login(){
+        x.style.left = "50px";
+        y.style.left ="450px";
+        z.style.left = "0px";
+    }
+   </script>
+ 
+ 
+   
+</body>
+</html>
